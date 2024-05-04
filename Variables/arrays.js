@@ -35,3 +35,39 @@ for (i=0; i < ar.length; i++){
         console.log(arr[i]);
     }
 }
+
+// let choice;
+// do {
+//     console.log("Menu:");
+//     console.log("1. Option 1");
+//     console.log("2. Option 2");
+//     console.log("3. Exit");
+
+//     choice = parseInt(prompt("Enter your choice:"));
+
+//     switch (choice) {
+//         case 1:
+//             console.log("Option 1 selected");
+//             break;
+//         case 2:
+//             console.log("Option 2 selected");
+//             break;
+//         case 3:
+//             console.log("Exiting...");
+//             break;
+//         default:
+//             console.log("Invalid choice. Please try again.");
+//     }
+// } while (choice !== 3);
+
+//  Processing Files or Data Scenario: You're building a script to process a CSV file line by line, and you need to skip the header line.
+
+let data = ["Name, Age", "John, 30", "Alice, 25", "Bob, 40"];
+let i = 1; // Start from 1 to skip header
+
+do {
+    console.log("Processing data:", data[i]);
+    i++;
+} while (i < data.length);
+
+console.log(data);
